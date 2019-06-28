@@ -67,7 +67,7 @@ function newquestion() {
         if (aanswer == triviaQuestions[tq].correctanswer) {
             answersCorrect += 1;
             $("#gif").empty();
-            $("#gif").html("<img src='./assets/images/youwin2.gif'>");
+            $("#gif").append("<img src='./images/youwin2.gif'>");
             sleep(3000);
             $("#gif").empty();
             // u win the question
@@ -77,7 +77,7 @@ function newquestion() {
         else {
             answersWrong += 1;
             $("#gif").empty();
-            $("#gif").html("<img src='./assets/images/youlose2.gif'>");
+            $("#gif").append("<img src='./images/youlose2.gif'>");
             sleep(3000);
             $("#gif").empty();
             // u lose question
