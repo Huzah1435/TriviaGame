@@ -19,3 +19,7 @@ header {
 #restart {
     display:none;
 }
+#gif{
+    width: 100px;
+    height: 100px;
+}

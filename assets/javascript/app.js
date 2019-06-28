@@ -66,20 +66,22 @@ function newquestion() {
         //stop timer
         if (aanswer == triviaQuestions[tq].correctanswer) {
             answersCorrect += 1;
-            $("#gif").empty();
-            $("#gif").append("<img src='./images/youwin2.gif'>");
+            // $("#gif").empty();
+            var gifImage = "assets/images/youwin2.gif";
+            $("#gif").attr('src', gifImage);
             sleep(3000);
-            $("#gif").empty();
+            // $("#gif").empty();
             // u win the question
             // input animted gif
             // the pause is working where the gif should be playing
         }
         else {
             answersWrong += 1;
-            $("#gif").empty();
-            $("#gif").append("<img src='./images/youlose2.gif'>");
+            // $("#gif").empty();
+            var gifImage = "assets/images/youlose2.gif";
+            $("#gif").attr('src', gifImage);
             sleep(3000);
-            $("#gif").empty();
+            // $("#gif").attr('src', "");
             // u lose question
             // input animated gif
             // the pause is working where the gif should be playing
