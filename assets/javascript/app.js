@@ -72,6 +72,7 @@ function newquestion() {
             $("#gif").empty();
             // u win the question
             // input animted gif
+            // the pause is working where the gif should be playing
         }
         else {
             answersWrong += 1;
@@ -81,6 +82,7 @@ function newquestion() {
             $("#gif").empty();
             // u lose question
             // input animated gif
+            // the pause is working where the gif should be playing
         }
         //answer right or wrong or timer ends
         // check answer routine for all questions
@@ -94,6 +96,7 @@ function newquestion() {
         // stack of how many are right and how many are wrong
     })
 }
+//displays wrong right and wins as well as timed out answers
 function displayStats() {
     $(".answerlist").empty();
     $(".question").empty();
@@ -126,6 +129,3 @@ function sleep(milliseconds) {
         }
     }
 }
-$("#gif").html('<img src="./assets/images/youlose2.gif">');
-sleep(5000);
-$("#gif").empty();
